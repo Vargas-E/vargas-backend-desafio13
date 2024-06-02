@@ -3,6 +3,8 @@ const program = require("../utils/commander.js");
 
 const {mode} = program.opts();
 
+console.log("mode:", mode);
+
 dotenv.config({
     path: mode === "produccion" ? "./.env.produccion" : "./.env.desarrollo"
 });
